@@ -1,7 +1,4 @@
-✅ README.md for SentimentScout - YouTube Comment Analyzer
-markdown
-Copy
-Edit
+
 # 🎯 SentimentScout - YouTube Comment Analyzer
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
