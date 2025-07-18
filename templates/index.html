@@ -1,0 +1,31 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Comment Sentiment</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2em; background-color: #f5f5f5; }
+        input[type=text] { width: 60%; padding: 10px; }
+        input[type=submit] { padding: 10px 20px; }
+        .comment-box { margin: 1em 0; padding: 1em; background: white; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h2>YouTube Comment Sentiment Analyzer</h2>
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter YouTube Video URL" required>
+        <input type="submit" value="Analyze">
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% for item in results %}
+        <div class="comment-box">
+            <strong>{{ item.label }} ({{ item.score }})</strong><br>
+            {{ item.comment }}
+        </div>
+    {% endfor %}
+</body>
+</html>
