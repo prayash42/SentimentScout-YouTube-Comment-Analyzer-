@@ -58,7 +58,7 @@ Edit
 ### 1. 🧬 Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/SentimentScout-YouTube-Comment-Analyzer.git
+git clone https://github.com/prayash42/SentimentScout-YouTube-Comment-Analyzer.git
 cd SentimentScout-YouTube-Comment-Analyzer/youtube_sentiment_app
 2. 🐍 Create Virtual Environment (Optional but Recommended)
 bash
